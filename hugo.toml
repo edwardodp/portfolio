@@ -23,3 +23,6 @@ theme = 'darcula-ide'
     hybrid_chess_engine = "cpp"
     crowd_dynamics_engine = "py"
     a_equals_b_interpreter = "hs"
+
+[markup.goldmark.renderer]
+  unsafe = true
