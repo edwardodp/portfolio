@@ -1,0 +1,77 @@
+<ul>
+    {{/* Root portfolio folder */}}
+    <li>
+        <details open>
+            <summary class="sidebar-item">
+                <span class="folder-arrow">▶</span>
+                {{ partial "icons/folder.html" }}
+                portfolio
+            </summary>
+            <ul>
+                {{/* README.md - Homepage */}}
+                <li>
+                    <a href="/" class="sidebar-item{{ if .IsHome }} active{{ end }}">
+                        {{ partial "icons/file-md.html" }}
+                        README.md
+                    </a>
+                </li>
+                
+                {{/* resume.yaml */}}
+                <li>
+                    <a href="/resume/" class="sidebar-item{{ if eq .RelPermalink "/resume/" }} active{{ end }}">
+                        {{ partial "icons/file-yaml.html" }}
+                        resume.yaml
+                    </a>
+                </li>
+                
+                {{/* Projects folder */}}
+                <li>
+                    <details open>
+                        <summary class="sidebar-item">
+                            <span class="folder-arrow">▶</span>
+                            {{ partial "icons/folder.html" }}
+                            projects
+                        </summary>
+                        <ul>
+                            {{/* Auto-generate from /content/projects/ */}}
+                            {{ range where .Site.RegularPages "Section" "projects" }}
+                            {{ $projectName := .File.ContentBaseName }}
+                            {{ $displayName := replace (replace $projectName "_" " ") "-" " " | title }}
+                            {{ $githubURL := index $.Site.Params.projects $projectName }}
+                            {{ $fileExt := index $.Site.Params.projectExtensions $projectName | default "py" }}
+                            <li>
+                                <details>
+                                    <summary class="sidebar-item">
+                                        <span class="folder-arrow">▶</span>
+                                        {{ partial "icons/folder.html" }}
+                                        {{ $displayName }}
+                                    </summary>
+                                    <ul>
+                                        <li>
+                                            <a href="{{ .RelPermalink }}" class="sidebar-item{{ if eq $.RelPermalink .RelPermalink }} active{{ end }}">
+                                                {{ partial "icons/file-md.html" }}
+                                                README.md
+                                            </a>
+                                        </li>
+                                        {{ if $githubURL }}
+                                        <li>
+                                            <a href="{{ $githubURL }}" target="_blank" class="sidebar-item">
+                                                {{ if eq $fileExt "cpp" }}{{ partial "icons/file-cpp.html" }}
+                                                {{ else if eq $fileExt "hs" }}{{ partial "icons/file-hs.html" }}
+                                                {{ else }}{{ partial "icons/file-py.html" }}
+                                                {{ end }}
+                                                source_code.{{ $fileExt }}
+                                            </a>
+                                        </li>
+                                        {{ end }}
+                                    </ul>
+                                </details>
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </details>
+    </li>
+</ul>

@@ -1,0 +1,15 @@
+<div class="ide-tabs">
+    <div class="ide-tab">
+        {{/* Determine file icon and name based on current page */}}
+        {{ if .IsHome }}
+            {{ partial "icons/file-md.html" }}
+            README.md
+        {{ else if eq .RelPermalink "/resume/" }}
+            {{ partial "icons/file-yaml.html" }}
+            resume.yaml
+        {{ else }}
+            {{ partial "icons/file-md.html" }}
+            README.md
+        {{ end }}
+    </div>
+</div>

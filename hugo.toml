@@ -1,3 +1,25 @@
 baseURL = 'https://edwardodp.dev'
 languageCode = 'en-us'
-title = 'Portfolio'
+title = "Edward O'Dwyer"
+theme = 'darcula-ide'
+
+[params]
+  # Text shown above sidebar (top-left cell)
+  sidebarTitle = "edwardodp"
+
+  # Social links (shown in status bar, bottom-right)
+  [params.social]
+    github = "https://github.com/edwardodp"
+    linkedin = "https://linkedin.com/in/edward-odwyer"
+
+  # Project GitHub URLs - keyed by folder name in content/projects/
+  [params.projects]
+    hybrid_chess_engine = "https://github.com/edwardodp/chess-engine-framework"
+    crowd_dynamics_engine = "https://github.com/edwardodp/crowd-flow"
+    a_equals_b_interpreter = "https://github.com/edwardodp/haskell-atob"
+
+  # File extensions for source_code.xxx links (defaults to "py")
+  [params.projectExtensions]
+    hybrid_chess_engine = "cpp"
+    crowd_dynamics_engine = "py"
+    a_equals_b_interpreter = "hs"

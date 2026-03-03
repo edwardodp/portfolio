@@ -1,0 +1,11 @@
+name = "Darcula IDE"
+license = "MIT"
+licenselink = "https://github.com/edwardodp/darcula-ide/blob/main/LICENSE"
+description = "A Hugo theme inspired by IntelliJ's Darcula colour scheme"
+tags = ["dark", "ide", "portfolio", "developer", "minimal"]
+features = ["syntax-highlighting", "responsive"]
+min_version = "0.100.0"
+
+[author]
+    name = "Edward O'Dwyer"
+    homepage = "https://edwardodp.dev"
