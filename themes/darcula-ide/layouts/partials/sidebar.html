@@ -10,7 +10,7 @@
             <ul>
                 {{/* README.md - Homepage */}}
                 <li>
-                    <a href="{{ "/" | relURL }}" class="sidebar-item{{ if .IsHome }} active{{ end }}">
+                    <a href="{{ .Site.Home.RelPermalink }}" class="sidebar-item{{ if .IsHome }} active{{ end }}">
                         {{ partial "icons/file-md.html" }}
                         README.md
                     </a>
@@ -18,7 +18,7 @@
                 
                 {{/* resume.yaml */}}
                 <li>
-                    <a href="{{ "/resume/" | relURL }}" class="sidebar-item{{ if eq .RelPermalink "/resume/" }} active{{ end }}">
+                    <a href="{{ "resume/" | absURL }}" class="sidebar-item{{ if eq .RelPermalink "/resume/" }} active{{ end }}">
                         {{ partial "icons/file-yaml.html" }}
                         resume.yaml
                     </a>
