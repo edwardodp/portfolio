@@ -5,7 +5,7 @@ theme = 'darcula-ide'
 
 [params]
   # Text shown above sidebar (top-left cell)
-  sidebarTitle = "edwardodp"
+  sidebarTitle = "EDWARDODP"
 
   # Social links (shown in status bar, bottom-right)
   [params.social]

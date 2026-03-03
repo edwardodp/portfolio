@@ -17,6 +17,12 @@
         {{/* Row 1: Sidebar header + Tab bar */}}
         <div class="sidebar-header">{{ .Site.Params.sidebarTitle | default "PROJECT" }}</div>
         <div class="tab-bar">
+            {{/* Hamburger button for mobile */}}
+            <button class="hamburger" onclick="document.body.classList.toggle('sidebar-open')" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             {{/* Determine file icon and name based on current page */}}
             {{ if .IsHome }}
                 {{ partial "icons/file-md.html" }}
@@ -31,8 +37,10 @@
         </div>
 
         {{/* Row 2: Sidebar + Main content */}}
+        <div class="sidebar-overlay" onclick="document.body.classList.remove('sidebar-open')"></div>
         <nav class="sidebar">
             {{ partial "sidebar.html" . }}
+        </nav>
         </nav>
         <main class="ide-content">
             {{ block "main" . }}{{ end }}
@@ -65,6 +73,9 @@
             
             e.preventDefault();
             const url = link.href;
+
+            // Close mobile sidebar
+            document.body.classList.remove('sidebar-open');
 
             try {
                 const response = await fetch(url);
