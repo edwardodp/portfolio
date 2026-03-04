@@ -18,7 +18,7 @@
                 
                 {{/* resume.yaml */}}
                 <li>
-                    <a href="{{ "resume/" | absURL }}" class="sidebar-item{{ if eq .RelPermalink "/resume/" }} active{{ end }}">
+                    <a href="{{ "resume/" | absURL }}" class="sidebar-item{{ if in .RelPermalink "resume" }} active{{ end }}">
                         {{ partial "icons/file-yaml.html" }}
                         resume.yaml
                     </a>

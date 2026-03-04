@@ -1,4 +1,4 @@
-baseURL = 'https://edwardodp.github.io/portfolio/'
+baseURL = 'https://edwardodp.dev'
 languageCode = 'en-us'
 title = "Edward O'Dwyer"
 theme = 'darcula-ide'

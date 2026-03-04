@@ -4,13 +4,13 @@ title: "Resume"
 
 # Edward O'Dwyer
 
-edward (dot) o-dwyer [at] warwick (dot) ac (dot) uk · [linkedin.com/in/edward-odwyer](https://linkedin.com/in/edward-odwyer) · [github.com/edwardodp](https://github.com/edwardodp)
+{{< email user="edward.o-dwyer" domain="warwick.ac.uk" >}} · [linkedin.com/in/edward-odwyer](https://linkedin.com/in/edward-odwyer) · [github.com/edwardodp](https://github.com/edwardodp)
 
 ## Technical Skills
 
-**Languages:** Java, Python, C/C++, SQL (PostgreSQL & SQLite), C# (w/ Unity), JavaScript, Lua, Shell script, Haskell
+**Languages:** Java, Python, C/C++, SQL (PostgreSQL & SQLite), Lua, Shell script, Haskell
 
-**Dev Tools/Frameworks:** Git, GitHub, SQLite, PostHog, PostgreSQL, Neovim, UNIX tools, Redis, REST, gRPC
+**Tools/Frameworks:** Git, GitHub, SQLite, PostgreSQL, Neovim, UNIX, Redis, REST, gRPC
 
 **Concepts:** Low-Latency Systems, Concurrency, API Design, Quantitative Analysis, Distributed Systems
 
