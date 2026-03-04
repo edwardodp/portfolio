@@ -4,15 +4,19 @@ title: "Resume"
 
 # Edward O'Dwyer
 
-{{< email user="edward.o-dwyer" domain="warwick.ac.uk" >}} · [linkedin.com/in/edward-odwyer](https://linkedin.com/in/edward-odwyer) · [github.com/edwardodp](https://github.com/edwardodp)
+{{< email user="edward.o-dwyer" domain="warwick.ac.uk" display="edward (dot) o-dwyer [at] warwick.ac.uk" >}} · [in/edward-odwyer](https://linkedin.com/in/edward-odwyer) · [github.com/edwardodp](https://github.com/edwardodp)
+
+---
 
 ## Technical Skills
 
-**Languages:** Java, Python, C/C++, SQL (PostgreSQL & SQLite), Lua, Shell script, Haskell
+**Languages:** Java, Python, C/C++, SQL (PostgreSQL & SQLite), Shell script, Haskell
 
 **Tools/Frameworks:** Git, GitHub, SQLite, PostgreSQL, Neovim, UNIX, Redis, REST, gRPC
 
-**Concepts:** Low-Latency Systems, Concurrency, API Design, Quantitative Analysis, Distributed Systems
+**Concepts:** Low-Latency Systems, Concurrency, API Design, Distributed Systems
+
+---
 
 ## Education
 
@@ -23,6 +27,8 @@ BSc (Hons) Computer Science · Sep **2024** – Jul **2027** · Coventry, UK
 
 ### The American School in London
 High School Diploma · Aug **2017** – Jun **2024** · London, UK
+
+---
 
 ## Experience
 
@@ -35,6 +41,8 @@ Jul **2025** – Sep **2025** · London, UK
 - Engineered a performant, company-wide KPI dashboard, consolidating data from **5** sources to provide BI insights
 - Architected a highly scalable data platform, designing a caching system that enables easy integration of new data sources
 - Analysed KPI trends using statistical methods, including lines of best fit and correlation analysis, to translate raw data into **20+** strategic business forecasts
+
+---
 
 ## Projects
 
@@ -65,6 +73,8 @@ Jul **2025** – Sep **2025** · London, UK
 - Built an interpreter for the A=B (a to b) esoteric language using Haskell, featuring a custom parser
 - Achieved correct interpretation of **100%** of official A=B examples, demonstrating deep understanding of idiomatic Haskell
 
+---
+
 ## Awards
 
 ### QRT IC Algothon 24 – Finalist
@@ -77,6 +87,9 @@ Jul **2025** – Sep **2025** · London, UK
 Oct **2023**
 
 - Awarded to **8%** of entrants
+
+
+---
 
 ## Extracurricular
 

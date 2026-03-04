@@ -91,7 +91,8 @@
 
                 // Update active state in sidebar
                 document.querySelectorAll('.sidebar-item.active').forEach(el => el.classList.remove('active'));
-                const newActive = document.querySelector(`.sidebar-item[href="${new URL(url).pathname}"]`);
+                const pathname = new URL(url).pathname;
+                const newActive = document.querySelector(`.sidebar-item[href*="${pathname}"]`);
                 if (newActive) newActive.classList.add('active');
 
                 history.pushState(null, '', url);

@@ -11,6 +11,6 @@ I'm a computer science student at the University of Warwick, based in London. I'
 ---
 
 **github:** [@edwardodp](https://github.com/edwardodp)\
-**email:** {{< email user="edward.o-dwyer" domain="warwick.ac.uk" >}}
+**email:** {{< email user="edward.o-dwyer" domain="warwick.ac.uk" display="edward (dot) o-dwyer [at] warwick.ac.uk" >}}
 
 </div>
