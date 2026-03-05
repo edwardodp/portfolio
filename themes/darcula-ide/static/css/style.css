@@ -9,6 +9,7 @@
     --text: #bababa;
     --text-muted: #a0a0a0;
     --text-bright: #e0e0e0;
+    --text-strong: #c792ea;
     --syntax-keyword: #cc7832;
     --syntax-string: #6a8759;
     --syntax-number: #6897bb;
@@ -259,7 +260,7 @@ details[open] > summary .folder-arrow {
 
 .ide-content h2 {
     color: var(--syntax-keyword);
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 500;
     margin: 28px 0 12px 0;
 }
@@ -338,7 +339,7 @@ details[open] > summary .folder-arrow {
 }
 
 .ide-content strong {
-    color: var(--syntax-number);
+    color: var(--text-strong);
     font-weight: 500;
 }
 

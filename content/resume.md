@@ -12,7 +12,7 @@ title: "Resume"
 
 **Languages:** Java, Python, C/C++, SQL (PostgreSQL & SQLite), Shell script, Haskell
 
-**Tools/Frameworks:** Git, GitHub, SQLite, PostgreSQL, Neovim, UNIX, Redis, REST, gRPC
+**Dev. Tools/Frameworks:** Git, GitHub, SQLite, PostHog, PostgreSQL, Neovim, UNIX, Redis, REST, gRPC
 
 **Concepts:** Low-Latency Systems, Concurrency, API Design, Distributed Systems
 
@@ -20,82 +20,84 @@ title: "Resume"
 
 ## Education
 
-### University of Warwick
-BSc (Hons) Computer Science · Sep **2024** – Jul **2027** · Coventry, UK
+{{< entry title="University of Warwick" date="Sep 2024 – Jul 2027 · Coventry, UK" >}}
 
+*Bachelor of Science (Honours) in Computer Science*
 - Expected: First, Penultimate year student
 
-### The American School in London
-High School Diploma · Aug **2017** – Jun **2024** · London, UK
+{{< entry title="The American School in London" date="Aug 2017 – Jun 2024 · London, UK" >}}
+
+*High School Diploma*
 
 ---
 
 ## Experience
 
-### Data Engineer Intern @ Homey Technology
-Jul **2025** – Sep **2025** · London, UK
+{{< entry title="Data Engineer Intern @ Homey Technology" date="Jul 2025 – Sep 2025 · London, UK" >}}
 
-*Python, Pandas, NumPy, Plotly, Streamlit, PostHog, PostgreSQL*
+{{< tech >}}Python, Pandas, NumPy, Plotly, Streamlit, PostHog, PostgreSQL{{< /tech >}}
 
-- Drove a **97%** reduction in KPI dashboard latency, directly improving data accessibility for business intelligence teams, by engineering a concurrent caching system in Python with per-query mutex locks
-- Engineered a performant, company-wide KPI dashboard, consolidating data from **5** sources to provide BI insights
-- Architected a highly scalable data platform, designing a caching system that enables easy integration of new data sources
-- Analysed KPI trends using statistical methods, including lines of best fit and correlation analysis, to translate raw data into **20+** strategic business forecasts
+- Drove a {{< num >}}97%{{< /num >}} {{< bright >}}reduction in KPI dashboard latency{{< /bright >}}, directly improving data accessibility for business intelligence teams, by engineering a {{< bright >}}concurrent caching system{{< /bright >}} in Python with per-query mutex locks
+- Engineered a performant, {{< bright >}}company-wide KPI dashboard{{< /bright >}}, consolidating data from {{< num >}}5{{< /num >}} sources to provide BI insights
+- Architected a {{< bright >}}highly scalable data platform{{< /bright >}}, designing a caching system that enables easy integration of new data sources
+- Analysed KPI trends using statistical methods, including lines of best fit and correlation analysis, to translate raw data into {{< num >}}20+{{< /num >}} {{< bright >}}strategic business forecasts{{< /bright >}}
 
 ---
 
 ## Projects
 
-### Crowd Dynamics and Optimisation Engine
-*Python, Numba, NumPy, Librosa* · Built in **24h** · Feb **2026**
+{{< entry title="Crowd Dynamics and Optimisation Engine" date="Built in 24h · Feb 2026" >}}
 
-- Engineered a custom Verlet integration physics engine, utilising JIT compilation to simulate **2,000+** agents at **60** FPS
-- Implemented Spatial Partitioning via Cell Lists to optimise collision detection from O(N²) to O(N) ensuring performance
-- Developed a Monte Carlo Search algorithm to optimise barrier placement, achieving a ~**60%** reduction in crowd pressure
-- Integrated waveform analysis using Librosa to dynamically characterise agent behaviour via audio spectral data
+{{< tech >}}Python, Numba, NumPy, Librosa{{< /tech >}}
 
-### Hybrid Chess Engine Framework
-*C++, Python, Numba, SFML* · Dec **2025** – Jan **2026**
+- Engineered a custom {{< bright >}}Verlet integration physics engine{{< /bright >}}, utilising {{< bright >}}JIT compilation{{< /bright >}} to simulate {{< num >}}2,000+{{< /num >}} agents at {{< num >}}60{{< /num >}} FPS
+- Implemented {{< bright >}}Spatial Partitioning{{< /bright >}} via Cell Lists to optimise collision detection from **O(N²) to O(N)** ensuring performance
+- Developed a {{< bright >}}Monte Carlo Search algorithm{{< /bright >}} to optimise barrier placement, achieving a {{< num >}}~60%{{< /num >}} reduction in crowd pressure
+- Integrated {{< bright >}}waveform analysis{{< /bright >}} using Librosa to dynamically characterise agent behaviour via audio spectral data
 
-- Designed a hybrid C++/Python engine, integrating a low-latency backend with an accessible interface for users to inject Numba-compiled machine code
-- Iteratively enhanced engine strength by evolving the search algorithm from Minimax to Negamax with Alpha-Beta pruning, and implementing Quiescence Search to mitigate the horizon effect
-- Developed a custom move generation engine and GUI from the ground up using C++ and SFML, utilising bitboard representations to optimise validation speed and minimise memory usage to be within **150**MB
+{{< entry title="Hybrid Chess Engine Framework" date="Dec 2025 – Jan 2026" >}}
 
-### Mock Derivatives Trading API
-*C++, Redis, PostgreSQL, TimescaleDB, gRPC* · Sep **2025** – Present
+{{< tech >}}C++, Python, Numba, SFML{{< /tech >}}
 
-- Architected a high-throughput, low-latency mock trading API in C++, engineered to handle **100+** concurrent users through asynchronous I/O and database connection pooling
-- Engineered a low-latency data pipeline using gRPC and TimescaleDB, enabling millisecond-level queries on years of second-granular market data
+- Designed a hybrid C++/Python engine, integrating a low-latency backend with an accessible interface for users to inject {{< bright >}}Numba-compiled machine code{{< /bright >}}
+- Iteratively enhanced engine strength by evolving the search algorithm from Minimax to {{< bright >}}Negamax with Alpha-Beta pruning{{< /bright >}}, and implementing {{< bright >}}Quiescence Search{{< /bright >}} to mitigate the horizon effect
+- Developed a custom move generation engine and GUI from the ground up using {{< bright >}}C++ and SFML{{< /bright >}}, utilising {{< bright >}}bitboard representations{{< /bright >}} to optimise validation speed and minimise memory usage to be within {{< num >}}150{{< /num >}}MB
 
-### A=B Esolang Interpreter
-*Haskell, Cabal, Stack* · Mar **2025** – Apr **2025**
+{{< entry title="Mock Derivatives Trading API" date="Sep 2025 – Present" >}}
 
-- Built an interpreter for the A=B (a to b) esoteric language using Haskell, featuring a custom parser
-- Achieved correct interpretation of **100%** of official A=B examples, demonstrating deep understanding of idiomatic Haskell
+{{< tech >}}C++, Redis, PostgreSQL, TimescaleDB, gRPC{{< /tech >}}
+
+- Architected a {{< bright >}}high-throughput, low-latency mock trading API{{< /bright >}} in C++, engineered to handle {{< num >}}100+{{< /num >}} concurrent users through {{< bright >}}asynchronous I/O{{< /bright >}} and {{< bright >}}database connection pooling{{< /bright >}}
+- Engineered a {{< bright >}}low-latency data pipeline{{< /bright >}} using gRPC and TimescaleDB, enabling {{< bright >}}millisecond-level queries{{< /bright >}} on years of second-granular market data
+
+{{< entry title="A=B Esolang Interpreter" date="Mar 2025 – Apr 2025" >}}
+
+{{< tech >}}Haskell, Cabal, Stack{{< /tech >}}
+
+- Built an {{< bright >}}interpreter{{< /bright >}} for the A=B (a to b) esoteric language using Haskell, featuring a {{< bright >}}custom parser{{< /bright >}}
+- Achieved correct interpretation of {{< num >}}100%{{< /num >}} of official A=B examples, demonstrating deep understanding of idiomatic Haskell
 
 ---
 
 ## Awards
 
-### QRT IC Algothon 24 – Finalist
-*Python, NumPy, Pandas, Matplotlib, JavaScript* · Nov **2024**
+{{< entry title="QRT IC Algothon 24 – Finalist" date="Nov 2024" >}}
 
-- Acquired **9th** out of ~**200** teams (top **4.5%**) in Europe's largest and most competitive algorithmic trading hackathon (**25%** admittance rate)
-- Forecasted financial market data with statistical and data analysis
+{{< tech >}}Python, NumPy, Pandas, Matplotlib, JavaScript{{< /tech >}}
 
-### UKMT Senior Maths Challenge – Gold
-Oct **2023**
+- Acquired {{< num >}}9th{{< /num >}} out of {{< num >}}~200{{< /num >}} teams (top {{< num >}}4.5%{{< /num >}}) in {{< bright >}}Europe's largest and most competitive algorithmic trading hackathon{{< /bright >}} ({{< num >}}25%{{< /num >}} admittance rate)
+- Forecasted financial market data with {{< bright >}}statistical and data analysis{{< /bright >}}
 
-- Awarded to **8%** of entrants
+{{< entry title="UKMT Senior Maths Challenge – Gold" date="Oct 2023" >}}
 
+- Awarded to {{< num >}}8%{{< /num >}} of entrants
 
 ---
 
 ## Extracurricular
 
-### Academic Executive Officer @ University of Warwick Computing Society
-Oct **2024** – Present
+{{< entry title="Academic Executive Officer @ University of Warwick Computing Society" date="Oct 2024 – Present" >}}
 
-- Co-led the organisation of the largest Warwick Hackathon by liaising with sponsors and raising £**10,000** in **2025**
-- Collaborated with **10+** societies and **7** companies across the Tech/Finance industries to deliver large-scale joint events
-- Led the organisation of a large Chess Engine Competition, securing a sponsor from Optiver for the event and building the high-performance framework for the **40** competitors
+- Co-led the organisation of the {{< bright >}}largest Warwick Hackathon{{< /bright >}} by liaising with sponsors and raising £{{< num >}}10,000{{< /num >}} in {{< num >}}2025{{< /num >}}
+- Collaborated with {{< num >}}10+{{< /num >}} societies and {{< num >}}7{{< /num >}} companies across the Tech/Finance industries to deliver {{< bright >}}large-scale joint events{{< /bright >}}
+- Led the organisation of a large {{< bright >}}Chess Engine Competition{{< /bright >}}, securing a sponsor from Optiver for the event and building the {{< bright >}}high-performance framework{{< /bright >}} for the {{< num >}}40{{< /num >}} competitors
