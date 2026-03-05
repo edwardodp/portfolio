@@ -67,10 +67,21 @@
     </div>
 
     <script>
+        // Handle obfuscated email links
+        document.addEventListener('click', (e) => {
+            const emailLink = e.target.closest('.email-link');
+            if (!emailLink) return;
+            e.preventDefault();
+            e.stopPropagation();
+            var u = emailLink.getAttribute('data-u').split('').reverse().join('');
+            var d = emailLink.getAttribute('data-d').split('').reverse().join('');
+            window.location.href = 'mail' + 'to:' + u + '@' + d;
+        });
+
         // SPA-like navigation (keeps sidebar state)
         document.addEventListener('click', async (e) => {
             const link = e.target.closest('a');
-            if (!link || link.target === '_blank' || link.origin !== window.location.origin) return;
+            if (!link || link.target === '_blank' || link.origin !== window.location.origin || link.classList.contains('email-link')) return;
             
             e.preventDefault();
             const url = link.href;

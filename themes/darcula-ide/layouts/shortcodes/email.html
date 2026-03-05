@@ -1,5 +1,6 @@
 {{- $user := .Get "user" -}}
 {{- $domain := .Get "domain" -}}
-{{- $display := .Get "display" | default (printf "%s (dot) %s [at] %s" (replace $user "." " (dot) ") (index (split $domain ".") 0) (replace (strings.TrimPrefix (printf "%s." (index (split $domain ".") 0)) $domain) "." " (dot) ")) -}}
-{{- $id := printf "email-%s" (substr (md5 (printf "%s%s" $user $domain)) 0 8) -}}
-<a href="#" id="{{ $id }}" onclick="window.location.href='mailto:' + '{{ $user }}' + '@' + '{{ $domain }}'; return false;">{{ $display }}</a>
+{{- $display := .Get "display" | default (printf "%s [at] %s" (replace $user "." " (dot) ") (replace $domain "." " (dot) ")) -}}
+{{- $userRev := "" -}}{{- range (split $user "") | collections.Reverse -}}{{- $userRev = printf "%s%s" $userRev . -}}{{- end -}}
+{{- $domainRev := "" -}}{{- range (split $domain "") | collections.Reverse -}}{{- $domainRev = printf "%s%s" $domainRev . -}}{{- end -}}
+<a href="#" class="email-link" data-u="{{ $userRev }}" data-d="{{ $domainRev }}">{{ $display }}</a>
