@@ -95,9 +95,18 @@
                 const parser = new DOMParser();
                 const doc = parser.parseFromString(html, 'text/html');
 
-                // Update content and tab
-                document.querySelector('.ide-content').innerHTML = doc.querySelector('.ide-content').innerHTML;
-                document.querySelector('.tab-bar').innerHTML = doc.querySelector('.tab-bar').innerHTML;
+                // Non-page links (e.g. images) have no .ide-content and throw to the fallback
+                const content = doc.querySelector('.ide-content').innerHTML;
+                const tabs = doc.querySelector('.tab-bar').innerHTML;
+
+                // Push first so relative image paths resolve against the new URL
+                history.pushState(null, '', url);
+
+                // Update content and tab, from the top
+                const ide = document.querySelector('.ide-content');
+                ide.innerHTML = content;
+                ide.scrollTop = 0;
+                document.querySelector('.tab-bar').innerHTML = tabs;
                 document.title = doc.title;
 
                 // Update active state in sidebar
@@ -105,8 +114,6 @@
                 const pathname = new URL(url).pathname;
                 const newActive = document.querySelector(`.sidebar-item[href*="${pathname}"]`);
                 if (newActive) newActive.classList.add('active');
-
-                history.pushState(null, '', url);
             } catch (err) {
                 window.location.assign(url);
             }

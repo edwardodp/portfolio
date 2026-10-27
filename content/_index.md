@@ -6,7 +6,7 @@ title: "Home"
 
 # Edward O'Dwyer
 
-I'm a **computer science student** at the University of Warwick, based in **London**. I'm drawn to low-latency systems, performance engineering, and **quantitative development**: the kind of work where every millisecond matters.
+I'm a **final-year computer science student** at the University of Warwick, based in **London**. I'm drawn to low-latency systems, performance engineering, and **quantitative development**: the kind of work where every microsecond matters.
 
 [See my resume →](./resume/)
 
