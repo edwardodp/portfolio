@@ -1,0 +1,259 @@
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+\small
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Edward O'Dwyer} \\ \vspace{1pt}
+    \small +44 7342 919 926 $|$ \href{mailto:edward.o-dwyer@warwick.ac.uk}{\underline{edward.o-dwyer@warwick.ac.uk}} $|$
+    \href{https://www.linkedin.com/in/edward-odwyer}{\underline{linkedin.com/in/edward-odwyer}} $|$
+    \href{https://github.com/edwardodp}{\underline{github.com/edwardodp}} $|$
+    \href{https://edwardodp.dev}{\underline{edwardodp.dev}}
+\end{center}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C/C++, SQL (PostgreSQL \& SQLite), Shell script, Haskell} \\
+     \textbf{Dev. Tools/Frameworks}{: Git/GitHub, Linux/UNIX, Neovim, Valgrind, ASan/UBSan, Maven, JUnit, NumPy, Pandas, REST} \\
+     \textbf{Concepts}: Low-Latency Systems, Concurrency, API Design, Parallel Computing
+        }
+    }
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Warwick}{Coventry, UK}
+      {Bachelor of Science (Honours) in Computer Science}{Sep 2024 -- Jul 2027}
+      \resumeItemListStart
+        \resumeItem{Expected: First $|$ Modules: Advanced Comp. Architecture, Compilers, High Performance Computing (4th-year module)}
+        \resumeItem{Dissertation: \textit{eDSL for Compile-Time Task Dependency Graph Optimisation} (C++)}
+    \resumeItemListEnd
+    \resumeSubheading
+      {The American School in London}{London, UK}
+      {High School Diploma}{Aug 2017 -- Jun 2024}
+      % \resumeItemListStart
+      %   \resumeItem{Seven 5s in APs including: Physics C Mech., Physics C E\&M, Calculus BC, Computer Science A, Chem., Bio.}
+      %   \resumeItem{Achieved a 1550 on SAT: 800 Maths, 750 Reading \& Writing}
+      % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {Data Engineer Intern}{Jul 2025 -- Sep 2025}
+      {\textbf{Homey Technology} $|$ Python, Pandas, NumPy, Plotly, Streamlit, PostHog, PostgreSQL}{London, UK}
+        \resumeItemListStart
+          \resumeItem{Drove a \textbf{97\% reduction} in KPI dashboard latency via a \textbf{concurrent caching system} with per-query mutex locks}
+          \resumeItem{Built a company-wide KPI dashboard unifying \textbf{5 data sources}, architected so new sources plug in easily}
+          \resumeItem{Applied \textbf{correlation analysis} and lines of best fit to KPI trends, producing \textbf{20+ strategic forecasts}}
+          % \resumeItem{Implemented a bespoke, \textbf{multi-threaded concurrent caching system} that eliminated need for a costly, high-latency ETL pipeline and \textbf{ensured data integrity} using idempotent write operations}
+        \resumeItemListEnd
+
+    % \resumeSubheading
+    % {Program Coordinator and Educator}{August 2023 -- May 2024}
+    % {XCelero C.I.C.}{London, UK}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed 3 engaging courses covering foundational programming concepts using \textbf{Java} and block coding}
+    %     \resumeItem{\textbf{Impacted 50 kids} aged 11-16 through \textbf{200+ hours} of engagement from teaching}
+    %     \resumeItem{Established connections with 3 schools through collaborative communication to implement after school courses}
+    %     \resumeItem{Directed a group of \textbf{6 volunteers} leading to \textbf{50\% increase} in session enrolment}
+    %   \resumeItemListEnd
+
+    % \resumeSubheading
+    % {Research Assistant}{Jul 2022 -- Aug 2022}
+    % {\textbf{Faisal Lab} $|$ Unity, C\#}{London, UK}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed interactive virtual-reality environment using \textbf{Unity \& C\#} for motor-learning research}
+    %     \resumeItem{Collaborated with researcher to meet \textbf{5 data collection criteria} within an embodied virtual reality environment}
+    %   \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+            {\textbf{Airport Traffic Simulation} $|$ \emph{Java, JavaFX, Maven, JUnit}}{\textit{Departmental Prize} $|$ Jan 2026 -- Mar 2026}
+            \resumeItemListStart
+                \resumeItem{Architected the \textbf{MVVM} design for a \textbf{team of 6}, using immutable state snapshots to decouple engine and UI}
+                \resumeItem{Built the simulation engine's \textbf{lock-free} threading model using AtomicReference and a concurrent command queue}
+                \resumeItem{Implemented a \textbf{headless mode} that skips snapshot allocation and rendering, running 720 simulated hours in \textbf{0.3s}}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Crowd Dynamics and Optimisation Engine} $|$ \emph{Python, Numba, NumPy}}{\textit{Built in 24h} $|$ Feb 2026}
+            \resumeItemListStart
+                \resumeItem{Engineered a custom \textbf{Verlet integration physics engine}, utilising \textbf{JIT compilation} to simulate 2,000+ agents at 60 FPS}
+                \resumeItem{Implemented \textbf{Spatial Partitioning} via Cell Lists to optimise collision detection from $O(N^2)$ to $O(N)$ ensuring performance}
+                \resumeItem{Developed a \textbf{Monte Carlo Search} algorithm to optimise barrier placement, achieving a $\sim$60\% reduction in crowd pressure}
+                % \resumeItem{Integrated \textbf{waveform analysis} using Librosa to dynamically characterise agent behaviour via audio spectral data}
+            \resumeItemListEnd
+        \resumeProjectHeading
+            {\textbf{Hybrid Chess Engine Framework} $|$ \emph{C++, Python, Numba, SFML}}{Dec 2025 -- Jan 2026}
+            \resumeItemListStart
+                \resumeItem{Designed a hybrid engine letting users inject \textbf{Numba-compiled machine code} into a low-latency C++ backend}
+                \resumeItem{Evolved search from Minimax to \textbf{Negamax with Alpha-Beta}, adding \textbf{Quiescence Search} to mitigate the horizon effect}
+                \resumeItem{Built move generation and GUI from scratch in C++/SFML, using \textbf{bitboards} for fast validation within 150MB of memory}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Network Attacks Identifier} $|$ \emph{C, POSIX Threads}}{Nov 2025 -- Dec 2025}
+        \resumeItemListStart
+            \resumeItem{Architected a \textbf{single-producer, multi-consumer} pipeline with a \textbf{worker pool sized to core count} for true parallelism}
+            \resumeItem{Engineered a lock-synced \textbf{ring buffer} for passing packets, eliminating per-packet allocation and exploiting cache locality}
+            \resumeItem{Applied \textbf{fine-grained locking} over shared detection state, verifying \textbf{memory safety} under attack simulation with Valgrind}
+            % \resumeItem{Built in \textbf{C} using \textbf{libpcap} to capture and inspect live network traffic, flagging malicious activity across multiple attack vectors}
+    \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{A=B Esolang Interpreter} $|$ \emph{Haskell, Cabal, Stack}}{Mar 2025 -- Apr 2025}
+          \resumeItemListStart
+            \resumeItem{Built an interpreter for the A=B (a to b) esoteric language using Haskell, featuring a \textbf{custom parser}}
+            \resumeItem{Achieved correct interpretation of \textbf{100\%} of official A=B examples, demonstrating deep understanding of \textbf{idiomatic} Haskell}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+%-----------AWARDS-----------
+\section{Awards}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{UKIEPC 2026 -- 2nd of 22 Warwick Teams}}{\textit{Qualified for NWERC} $|$ Oct 2026}
+          \resumeItemListStart
+            \resumeItem{Competed in the UK \& Ireland Programming Contest, an ICPC-format algorithmic competition for university teams}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{IC Algothon 24 -- Finalist} $|$ \emph{Python, NumPy, Pandas, Matplotlib, JavaScript}}{Nov 2024}
+          \resumeItemListStart
+            \resumeItem{Placed $9^{\text{th}}$ \text{out of $\sim$ 200} teams (\textbf{top 4.5\%}) in Europe's largest algorithmic trading hackathon (\textbf{25\% admittance rate})}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+
+
+%-----------Leadership-----------
+\section{Leadership}
+    \resumeSubHeadingListStart
+      \resumeSubheading
+          {\textbf{Warwick Hackathon Organiser}}{Oct 2024 -- Present}{Warwick Hackathon (WHACK)}{}
+          \resumeItemListStart
+            \resumeItem{Co-lead organiser of \textbf{WHACK 2026}: \textbf{nearly tripled sponsorship to £26k} and \textbf{doubled capacity to 400} year-on-year}
+            \resumeItem{Owned sponsor negotiations end-to-end, restructuring tiers around a \textbf{£10k title package} to anchor gold pricing}
+            \resumeItem{Built a \textbf{Binomial turnout model} with a CLT approximation to size overbooking: \textbf{521 places} at \textbf{0.1\%} overflow risk}
+          \resumeItemListEnd
+      \resumeSubheading
+          {\textbf{Academic Executive Officer}}{Oct 2024 -- Jun 2026}{University of Warwick Computing Society}{}
+          \resumeItemListStart
+            \resumeItem{Supported \textbf{dozens of students} through recruitment with resume reviews, mock interviews, resources and workshops}
+            \resumeItem{Partnered with \textbf{10+ societies} on joint events, reaching compromises through responsive, needs-focused collaboration}
+            \resumeItem{Led a Chess Engine Competition for \textbf{40 competitors}, securing Optiver as sponsor and building the framework it ran on}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

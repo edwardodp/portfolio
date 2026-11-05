@@ -14,7 +14,7 @@ title: "Resume"
 
 **Dev. Tools/Frameworks:** Git/GitHub, Linux/UNIX, Neovim, Valgrind, ASan/UBSan, Maven, JUnit, NumPy, Pandas, REST
 
-**Concepts:** Low-Latency Systems, Concurrency, API Design, Distributed Systems
+**Concepts:** Low-Latency Systems, Concurrency, API Design, Parallel Computing
 
 ---
 
@@ -24,7 +24,7 @@ title: "Resume"
 
 *Bachelor of Science (Honours) in Computer Science*
 - Expected: First
-- Modules: Compiler Design, High Performance Computing (4th-year module)
+- Modules: Advanced Computer Architecture, Compilers, High Performance Computing (4th-year module)
 - Dissertation: *eDSL for Compile-Time Task Dependency Graph Optimisation* (C++)
 
 {{< entry title="The American School in London" date="Aug 2017 – Jun 2024 · London, UK" >}}
@@ -90,7 +90,7 @@ title: "Resume"
 
 ## Awards
 
-{{< entry title="UKIEPC 2026 – 2nd of 22 Warwick Teams" date="Oct 2026" >}}
+{{< entry title="UKIEPC 2026 – 2nd of 22 Warwick Teams" date="Qualified for NWERC · Oct 2026" >}}
 
 - Competed in the {{< bright >}}UK & Ireland Programming Contest{{< /bright >}}, an ICPC-format algorithmic competition for university teams
 
@@ -106,7 +106,7 @@ title: "Resume"
 
 {{< entry title="Warwick Hackathon Organiser @ WHACK" date="Oct 2024 – Present" >}}
 
-- Co-lead organiser of {{< bright >}}WHACK 2026{{< /bright >}}: tripled sponsorship to £{{< num >}}30k{{< /num >}} and doubled capacity to {{< num >}}400{{< /num >}} year-on-year
+- Co-lead organiser of {{< bright >}}WHACK 2026{{< /bright >}}: nearly tripled sponsorship to £{{< num >}}26k{{< /num >}} and doubled capacity to {{< num >}}400{{< /num >}} year-on-year
 - Owned sponsor negotiations end-to-end, restructuring tiers around a £{{< num >}}10k{{< /num >}} {{< bright >}}title package{{< /bright >}} to anchor gold pricing
 - Built a {{< bright >}}Binomial turnout model{{< /bright >}} with a CLT approximation to size overbooking: {{< num >}}521{{< /num >}} places at {{< num >}}0.1%{{< /num >}} overflow risk
 
