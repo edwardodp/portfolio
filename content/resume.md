@@ -90,6 +90,11 @@ title: "Resume"
 
 ## Awards
 
+{{< entry title="QRT C3 Hackathon 2026 – 2nd of 64 Teams" date="Qualified for Inter-University Final · Nov 2026" >}}
+
+- Orchestrated {{< num >}}5{{< /num >}} {{< bright >}}AI coding agents{{< /bright >}} over exact search, {{< bright >}}CP-SAT{{< /bright >}} and heuristics: {{< num >}}34%{{< /num >}} of packing instances provably optimal
+- Built the {{< bright >}}isolated multi-agent environment{{< /bright >}} they ran in, with sandboxed tools, scoped permissions and submissions blocked for agents
+
 {{< entry title="UKIEPC 2026 – 2nd of 22 Warwick Teams" date="Qualified for NWERC · Oct 2026" >}}
 
 - Competed in the {{< bright >}}UK & Ireland Programming Contest{{< /bright >}}, an ICPC-format algorithmic competition for university teams
