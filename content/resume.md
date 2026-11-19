@@ -34,7 +34,7 @@ title: "Resume"
 
 - Competed in the {{< bright >}}UK & Ireland Programming Contest{{< /bright >}}, an ICPC-format algorithmic competition for university teams
 
-{{< entry title="IC Algothon 24 – Finalist" date="Nov 2024" >}}
+{{< entry title="QRT IC Algothon 2024 – Finalist" date="Nov 2024" >}}
 
 {{< tech >}}Python, NumPy, Pandas, Matplotlib, JavaScript{{< /tech >}}
 
