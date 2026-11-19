@@ -8,16 +8,6 @@ title: "Resume"
 
 ---
 
-## Technical Skills
-
-**Languages:** Java, Python, C/C++, SQL (PostgreSQL & SQLite), Shell script, Haskell
-
-**Dev. Tools/Frameworks:** Git/GitHub, Linux/UNIX, Neovim, Valgrind, ASan/UBSan, Maven, JUnit, NumPy, Pandas, REST
-
-**Concepts:** Low-Latency Systems, Concurrency, API Design, Parallel Computing
-
----
-
 ## Education
 
 {{< entry title="University of Warwick" date="Sep 2024 – Jul 2027 · Coventry, UK" >}}
@@ -33,15 +23,34 @@ title: "Resume"
 
 ---
 
+## Awards
+
+{{< entry title="QRT C3 Hackathon 2026 – 2nd of 64 Teams" date="Qualified for Inter-University Final · Nov 2026" >}}
+
+- Owned the packing problem ({{< num >}}5th{{< /num >}} of {{< num >}}64{{< /num >}}), split across exact search, {{< bright >}}CP-SAT{{< /bright >}} and heuristics: {{< num >}}34%{{< /num >}} proven optimal
+- Ran each method as an {{< bright >}}AI coding agent{{< /bright >}} in a sandboxed environment I built, moving CPU to whatever was paying off
+
+{{< entry title="UKIEPC 2026 – 2nd of 22 Warwick Teams" date="Qualified for NWERC · Oct 2026" >}}
+
+- Competed in the {{< bright >}}UK & Ireland Programming Contest{{< /bright >}}, an ICPC-format algorithmic competition for university teams
+
+{{< entry title="IC Algothon 24 – Finalist" date="Nov 2024" >}}
+
+{{< tech >}}Python, NumPy, Pandas, Matplotlib, JavaScript{{< /tech >}}
+
+- Placed {{< num >}}9th{{< /num >}} out of {{< num >}}~200{{< /num >}} teams (top {{< num >}}4.5%{{< /num >}}) in {{< bright >}}Europe's largest algorithmic trading hackathon{{< /bright >}} ({{< num >}}25%{{< /num >}} admittance rate)
+
+---
+
 ## Experience
 
 {{< entry title="Data Engineer Intern @ Homey Technology" date="Jul 2025 – Sep 2025 · London, UK" >}}
 
 {{< tech >}}Python, Pandas, NumPy, Plotly, Streamlit, PostHog, PostgreSQL{{< /tech >}}
 
-- Drove a {{< num >}}97%{{< /num >}} {{< bright >}}reduction in KPI dashboard latency{{< /bright >}} via a {{< bright >}}concurrent caching system{{< /bright >}} with per-query mutex locks
-- Built a {{< bright >}}company-wide KPI dashboard{{< /bright >}} unifying {{< num >}}5{{< /num >}} data sources, architected so new sources plug in easily
-- Applied {{< bright >}}correlation analysis{{< /bright >}} and lines of best fit to KPI trends, producing {{< num >}}20+{{< /num >}} {{< bright >}}strategic forecasts{{< /bright >}}
+- Cut dashboard load times from {{< num >}}3s+{{< /num >}} to {{< num >}}~100ms{{< /num >}} with a {{< bright >}}concurrent cache{{< /bright >}}; per-query locks let charts load in parallel
+- Cached historical data long-term and same-day data on a {{< num >}}5{{< /num >}}-minute {{< bright >}}TTL{{< /bright >}}, removing the need for a costly ETL pipeline
+- Architected a backend unifying {{< num >}}5{{< /num >}} {{< bright >}}data sources{{< /bright >}} behind one interface, so new sources plug in easily
 
 ---
 
@@ -60,16 +69,16 @@ title: "Resume"
 {{< tech >}}Python, Numba, NumPy{{< /tech >}}
 
 - Engineered a custom {{< bright >}}Verlet integration physics engine{{< /bright >}}, utilising {{< bright >}}JIT compilation{{< /bright >}} to simulate {{< num >}}2,000+{{< /num >}} agents at {{< num >}}60{{< /num >}} FPS
-- Implemented {{< bright >}}Spatial Partitioning{{< /bright >}} via Cell Lists to optimise collision detection from **O(N²) to O(N)** ensuring performance
+- Implemented {{< bright >}}spatial partitioning{{< /bright >}} via cell lists, cutting collision detection from **O(N²) to O(N)**
 - Developed a {{< bright >}}Monte Carlo Search algorithm{{< /bright >}} to optimise barrier placement, achieving a {{< num >}}~60%{{< /num >}} reduction in crowd pressure
 
 {{< entry title="Hybrid Chess Engine Framework" date="Dec 2025 – Jan 2026" >}}
 
 {{< tech >}}C++, Python, Numba, SFML{{< /tech >}}
 
-- Designed a hybrid engine letting users inject {{< bright >}}Numba-compiled machine code{{< /bright >}} into a low-latency C++ backend
-- Evolved search from Minimax to {{< bright >}}Negamax with Alpha-Beta pruning{{< /bright >}}, adding {{< bright >}}Quiescence Search{{< /bright >}} to mitigate the horizon effect
-- Built move generation and GUI from scratch in {{< bright >}}C++ and SFML{{< /bright >}}, using {{< bright >}}bitboards{{< /bright >}} for fast validation within {{< num >}}150{{< /num >}}MB of memory
+- Designed a hybrid engine where competitors' Python evaluations compile via {{< bright >}}Numba{{< /bright >}} into native code for the C++ search
+- Wrote an {{< bright >}}alpha-beta search{{< /bright >}} (PVS, quiescence, move ordering) that beat a {{< num >}}~2200{{< /num >}} ECF player with a competitor's evaluation
+- Built {{< bright >}}magic-bitboard{{< /bright >}} move generation, exact on all {{< num >}}6{{< /num >}} standard perft positions at {{< num >}}57M{{< /num >}} positions/s
 
 {{< entry title="Network Attacks Identifier" date="Nov 2025 – Dec 2025" >}}
 
@@ -83,27 +92,8 @@ title: "Resume"
 
 {{< tech >}}Haskell, Cabal, Stack{{< /tech >}}
 
-- Built an {{< bright >}}interpreter{{< /bright >}} for the A=B (a to b) esoteric language using Haskell, featuring a {{< bright >}}custom parser{{< /bright >}}
-- Achieved correct interpretation of {{< num >}}100%{{< /num >}} of official A=B examples, demonstrating deep understanding of idiomatic Haskell
-
----
-
-## Awards
-
-{{< entry title="QRT C3 Hackathon 2026 – 2nd of 64 Teams" date="Qualified for Inter-University Final · Nov 2026" >}}
-
-- Orchestrated {{< num >}}5{{< /num >}} {{< bright >}}AI coding agents{{< /bright >}} over exact search, {{< bright >}}CP-SAT{{< /bright >}} and heuristics: {{< num >}}34%{{< /num >}} of packing instances provably optimal
-- Built the {{< bright >}}isolated multi-agent environment{{< /bright >}} they ran in, with sandboxed tools, scoped permissions and submissions blocked for agents
-
-{{< entry title="UKIEPC 2026 – 2nd of 22 Warwick Teams" date="Qualified for NWERC · Oct 2026" >}}
-
-- Competed in the {{< bright >}}UK & Ireland Programming Contest{{< /bright >}}, an ICPC-format algorithmic competition for university teams
-
-{{< entry title="IC Algothon 24 – Finalist" date="Nov 2024" >}}
-
-{{< tech >}}Python, NumPy, Pandas, Matplotlib, JavaScript{{< /tech >}}
-
-- Placed {{< num >}}9th{{< /num >}} out of {{< num >}}~200{{< /num >}} teams (top {{< num >}}4.5%{{< /num >}}) in {{< bright >}}Europe's largest algorithmic trading hackathon{{< /bright >}} ({{< num >}}25%{{< /num >}} admittance rate)
+- Built an {{< bright >}}interpreter{{< /bright >}} for the A=B esoteric language in Haskell, with a {{< bright >}}Megaparsec{{< /bright >}} parser-combinator front end
+- Passes {{< num >}}100%{{< /num >}} of the official A=B examples, and extends the language so `(once)` combines with `(start)` and `(end)`
 
 ---
 
@@ -117,6 +107,16 @@ title: "Resume"
 
 {{< entry title="Academic Executive Officer @ University of Warwick Computing Society" date="Oct 2024 – Jun 2026" >}}
 
-- Supported dozens of students through recruitment with resume reviews, mock interviews, resources and workshops
-- Partnered with {{< num >}}10+{{< /num >}} societies on {{< bright >}}joint events{{< /bright >}}, reaching compromises through responsive, needs-focused collaboration
-- Led a {{< bright >}}Chess Engine Competition{{< /bright >}} for {{< num >}}40{{< /num >}} competitors, securing Optiver as sponsor and building the framework it ran on
+- Supported {{< num >}}50+{{< /num >}} students through recruitment with CV reviews, mock interviews, resources and workshops
+- Ran events with sponsors and {{< num >}}10+{{< /num >}} societies, reaching {{< num >}}1,000+{{< /num >}} attendees in total
+- Led a {{< bright >}}Chess Engine Competition{{< /bright >}} for {{< num >}}40{{< /num >}} competitors, securing Optiver as sponsor and building the engine it ran on
+
+---
+
+## Technical Skills
+
+**Languages:** Java, Python, C/C++, SQL (PostgreSQL & SQLite), Shell script, Haskell
+
+**Dev. Tools/Frameworks:** Git/GitHub, Linux/UNIX, Neovim, Valgrind, ASan/UBSan, Maven, JUnit, NumPy, Pandas, REST
+
+**Concepts:** Low-Latency Systems, Concurrency, API Design, Parallel Computing

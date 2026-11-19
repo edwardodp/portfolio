@@ -19,7 +19,7 @@ Competitors write a single evaluation function in Python, restricted to what Num
 
 ## The search
 
-The board is a set of bitboards, one 64-bit integer per piece type. On top of legal move generation, the search grew from plain minimax into negamax with alpha-beta pruning and principal variation search, with iterative deepening, quiescence search to mitigate the horizon effect, and move ordering (MVV-LVA for captures, killer moves and the history heuristic for quiet moves). Positions are Zobrist-hashed, and draws are detected by threefold repetition and the fifty-move rule. Because every competitor shared this search, the competition came down purely to who could evaluate a position best.
+The board is a set of bitboards, one 64-bit integer per piece type, and sliding pieces use magic bitboards. Move generation is exact on all six standard perft test positions: about 1.45 billion positions checked, at roughly 57 million a second on one core of a MacBook Air. On top of it, the search grew from plain minimax into alpha-beta (written in negamax form) with principal variation search, with iterative deepening, quiescence search to mitigate the horizon effect, and move ordering (MVV-LVA for captures, killer moves and the history heuristic for quiet moves). Positions are Zobrist-hashed, and draws are detected by threefold repetition and the fifty-move rule. Because every competitor shared this search, the competition came down purely to who could evaluate a position best.
 
 ## Tooling
 
