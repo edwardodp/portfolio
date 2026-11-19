@@ -27,7 +27,7 @@ title: "Resume"
 
 {{< entry title="QRT C3 Hackathon 2026 – 2nd of 64 Teams" date="Qualified for Inter-University Final · Nov 2026" >}}
 
-- Owned the packing problem ({{< num >}}5th{{< /num >}} of {{< num >}}64{{< /num >}}), split across exact search, {{< bright >}}CP-SAT{{< /bright >}} and heuristics: {{< num >}}34%{{< /num >}} proven optimal
+- Owned the first problem ({{< num >}}5th{{< /num >}} of {{< num >}}64{{< /num >}}), split across exact search, {{< bright >}}CP-SAT{{< /bright >}} and heuristics: {{< num >}}34%{{< /num >}} proven optimal
 - Ran each method as an {{< bright >}}AI coding agent{{< /bright >}} in a sandboxed environment I built, moving CPU to whatever was paying off
 
 {{< entry title="UKIEPC 2026 – 2nd of 22 Warwick Teams" date="Qualified for NWERC · Oct 2026" >}}
